@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/*===========================
+CSS LAYOUT:
+    1. RESET DEFAULTS
+    2. GENERAL STYLING
+    3. ABOVE THE FOLD
+    4. CLASSES
+    5. FOOTER
+    6. INTERACTIVE STYLING
+
+ATTRIBUTE=VALUE SELECTORS ORDERED BY:
+    1.SIZE
+    2.POSITION
+    3.STYLE
+===========================*/
+
+
+
+
+/* || RESET DEFAULTS */
+
+* {
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+/* || GENERAL STYLING */
+
+h1, h2, h3, h4, p, button, a, li{
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 600;
+    color: #E6DEFF;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #E6DEFF;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+p { 
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+button {
+    width: 141px;
+    height: 40px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 7px;
+    color: #1C0148;
+    box-shadow: 0px 3px 6px #00000029;
+    background: transparent linear-gradient(-270deg, #E6DEFF 0%, #D6C7FF 100%) 0% 0% no-repeat padding-box;
+    cursor: pointer;
+    transition: all .07s ease-in-out; 
+}
+
+
+
+
+/* || ABOVE THE FOLD */
+
+.above-the-fold {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: left center;
+    overflow: hidden;
+    background-image: url("../img/background-image-recrop-5.jpg");
+}
+
+header {
+    margin: 35px 140px 0px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#logo {
+    height: 88px;
+    margin-right: auto;
+}
+
+.nav-links li {
+    margin-right: 69px;
+    display: inline-block;
+}
+
+.nav-links a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #E6DEFF;
+}
+
+.hero-copy {
+    margin: 24vh 24vh;
+    padding-top: 4vh;
+    max-width: 1261px;
+    line-height: 6.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    align-items: flex-start;
+}
+
+#reference {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 2em;
+    color: #E6DEFF;
+}
+
+
+
+
+/* || CLASSES */
+
+.body-footer-background {
+    height: 1880px;
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background: #ffffff url(../img/body-footer-background.png);
+}
+
+.classes h2 {
+    margin: 224px 0px 118px 0px ;
+    text-align: center;
+}
+
+.class-cards {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.class-card {
+    height: 890px;
+    width: 410px;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: inherit;
+    overflow: hidden;
+    transform: translate(0%, 0%);
+    border-radius: 50px;
+    box-shadow: 0 0 20px 0 rgba(90, 90, 90, 0.15);
+}
+
+.class-card:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 2000px 200px rgba(255, 255, 255, 0.17);
+    filter: blur(12px);
+}
+
+.class-title {
+    margin: 45px 0px 25px 0px;
+}
+
+.class-description {
+    margin: 0px 40px 25px 40px;
+    text-align: center;
+}
+
+.instructor-image {
+    height: 180px;
+    border-radius: 100px;
+}
+
+.instructor-name {
+    margin-top: 12px;
+}
+
+.instructor-of {
+    margin-bottom: 10px;
+}
+
+.instagram-icon {
+    height: 20px;
+    margin-bottom: 25px;
+}
+
+.card-hr {
+    height: 1px;
+    width: 70%;
+    border: 0;
+    clear: both;
+    display: block;
+    background-color: #E0D5FF;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.class-times-title {
+    margin-top: 25px;
+}
+
+.class-schedule {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: row;
+}
+
+.class-schedule li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.days {
+    margin-right: 13px;
+    text-align: right;
+}
+
+.times {
+    margin-left: 13px;
+}
+
+.class-card button {
+    margin-top: 30px;
+}
+
+
+
+
+/* || FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 285px;
+    
+}
+
+.footer-line {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 50%;
+    background-color: #E0D5FF;
+    height: 1px;
+    border-radius: 10px;
+}
+
+.footer-links {
+    margin-top: 51px;
+}
+
+footer a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+    color: #E6DEFF;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0px 20px;
+}
+
+.social-links img {
+    margin: 26px 7px 0px 7px;
+    height: 40px;
+}
+
+.social-links a {
+    opacity: 0.8;
+
+}
+
+.address {
+    margin-top: 20px;
+}
+
+
+
+/* || INTERACTIVE STYLING */
+
+a:hover {
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05); 
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
