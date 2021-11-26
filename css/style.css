@@ -146,11 +146,11 @@ header {
 .body-footer-background {
     height: 1880px;
     width: 100%;
-    background-size: cover;
-    background-position: center bottom;
     overflow: hidden;
-    background-repeat: no-repeat;
     background: #ffffff url(../img/body-footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  bottom;
 }
 
 .classes h2 {
