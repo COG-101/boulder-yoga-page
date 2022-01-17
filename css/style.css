@@ -152,6 +152,9 @@ header {
     overflow: hidden;
     background-repeat: no-repeat;
     background: #ffffff url(../img/body-footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  bottom;
 }
 
 .classes h2 {
