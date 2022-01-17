@@ -93,7 +93,7 @@ button {
     background-size: cover;
     background-position: left center;
     overflow: hidden;
-    background-image: url("../img/background-image-recrop-5.jpg");
+    background-image: url("../img/background-image-recrop-6.jpg");
 }
 
 header {
@@ -104,7 +104,8 @@ header {
 }
 
 #logo {
-    height: 88px;
+    /* height: 88px; */
+    height: 84px;
     margin-right: auto;
 }
 
@@ -146,11 +147,11 @@ header {
 .body-footer-background {
     height: 1880px;
     width: 100%;
-    overflow: hidden;
-    background: #ffffff url(../img/body-footer-background.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position:  bottom;
+    background-position: center bottom;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background: #ffffff url(../img/body-footer-background.png);
 }
 
 .classes h2 {
@@ -327,38 +328,9 @@ a:hover {
 }
 
 button:hover {
-    transform: scale(1.05); 
+    background: transparent linear-gradient(-270deg, #D8CBFC 0%, #CDB9FF 100%) 0% 0% no-repeat padding-box;
 }
 
 .social-links a:hover {
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
